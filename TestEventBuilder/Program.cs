@@ -13,7 +13,7 @@ namespace TestEventBuilder
     {
         static void Main(string[] args)
         {
-          //Configure consumer for event
+            //Configure consumer
             EventBroker.Instance.AddEventConsumers(new FileConsumer(1),
               new ConsoleConsumer() {EventFilter = new BaseFilter(e => e.Level == EventLevel.Info)});
 
