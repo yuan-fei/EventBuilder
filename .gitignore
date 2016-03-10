@@ -1,0 +1,7 @@
+EventBuilder.Events.Consumers/bin/
+EventBuilder.Events.Consumers/obj/
+EventBuilder.Attributes/obj/
+EventBuilder.Events/obj/
+EventBuilder/obj/
+TestEventBuilder/bin/
+TestEventBuilder/obj/
