@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using EventBuilder.Events;
 
-namespace EventBuilder.Events
+namespace EventBuilder
 {
-  public class SimpleEventSourceContainer:IEventSourceContainer
+  internal class SimpleEventSourceContainer:IEventSourceContainer
   {
     private readonly Dictionary<Type,Type> mEventSourceMapping=new Dictionary<Type, Type>();
     public void RegisterEventSource<T, U>()

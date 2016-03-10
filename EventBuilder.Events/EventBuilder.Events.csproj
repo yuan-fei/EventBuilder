@@ -49,20 +49,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEvent.cs" />
-    <Compile Include="BaseEventSource.cs" />
-    <Compile Include="EventConsumer.cs" />
     <Compile Include="EventLevel.cs" />
-    <Compile Include="EventSourceLocator.cs" />
     <Compile Include="EventType.cs" />
     <Compile Include="Filters\BaseFilter.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="ICorrelatable.cs" />
     <Compile Include="IEventConsumer.cs" />
-    <Compile Include="IEventSourceContainer.cs" />
     <Compile Include="IIdentifier.cs" />
     <Compile Include="NotCorrelated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleEventSourceContainer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

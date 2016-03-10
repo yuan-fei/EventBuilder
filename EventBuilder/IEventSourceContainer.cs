@@ -1,4 +1,6 @@
-namespace EventBuilder.Events
+using EventBuilder.Events;
+
+namespace EventBuilder
 {
   public interface IEventSourceContainer
   {

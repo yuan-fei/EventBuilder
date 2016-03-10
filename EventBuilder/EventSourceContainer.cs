@@ -2,7 +2,7 @@ using EventBuilder.Events;
 
 namespace EventBuilder
 {
-  public class EventSourceContainer:IEventSourceContainer
+  internal class EventSourceContainer:IEventSourceContainer
   {
 
     public void RegisterEventSource<T, U>()

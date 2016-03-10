@@ -1,4 +1,6 @@
-namespace EventBuilder.Events
+using EventBuilder.Events;
+
+namespace EventBuilder
 {
   public abstract class BaseEventSource:ICorrelatable
   {
@@ -32,7 +34,7 @@ namespace EventBuilder.Events
     protected void RaiseEvent(BaseEvent eventData)
     {
       //Console.WriteLine(eventData.EventType.Name);
-      EventConsumer.Instance.OnEvent(eventData);
+      EventBroker.Instance.OnEvent(eventData);
     }
   }
 }

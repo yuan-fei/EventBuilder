@@ -7,7 +7,7 @@ using EventBuilder.Events;
 namespace EventBuilder
 {
   internal delegate object CreateEventSourceInstance(IIdentifier correlationId);
-  public class EventSourceFactory
+  internal class EventSourceFactory
   {
     private const string CreateEventSourceMethodPattern = "CreateEventSource_{0}";
     private static readonly Dictionary<Type, DynamicEventSourceInstanceCreator> sEventSourceMapping = new Dictionary<Type, DynamicEventSourceInstanceCreator>();

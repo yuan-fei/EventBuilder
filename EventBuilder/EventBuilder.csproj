@@ -49,12 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDynamicEventSource.cs" />
+    <Compile Include="BaseEventSource.cs" />
+    <Compile Include="EventBroker.cs" />
     <Compile Include="EventSourceContainer.cs" />
     <Compile Include="EventSourceFactory.cs" />
+    <Compile Include="EventSourceLocator.cs" />
     <Compile Include="EventSourceMetaData.cs" />
     <Compile Include="EventSourceParser.cs" />
     <Compile Include="EventSourceTypeBuilder.cs" />
     <Compile Include="EventTypeRegistry.cs" />
+    <Compile Include="IEventSourceContainer.cs" />
+    <Compile Include="SimpleEventSourceContainer.cs" />
     <Compile Include="Utility\StringFormatParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\StaticReflection.cs" />

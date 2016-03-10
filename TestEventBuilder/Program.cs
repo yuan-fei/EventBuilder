@@ -13,12 +13,17 @@ namespace TestEventBuilder
     {
         static void Main(string[] args)
         {
-            var locator = new EventSourceLocator(new EventSourceContainer());
-            EventConsumer.Instance.AddEventConsumers(new FileConsumer(1), new ConsoleConsumer() { EventFilter = new BaseFilter(e => e.Level == EventLevel.Info) });
+          //Configure consumer for event
+            EventBroker.Instance.AddEventConsumers(new FileConsumer(1),
+              new ConsoleConsumer() {EventFilter = new BaseFilter(e => e.Level == EventLevel.Info)});
 
-            var evtSource = locator.GetEventSource<ICardEventSource>();
+            //Create event source
+            var evtSource = EventBroker.Instance.EventSourceContainer.GetEventSource<ICardEventSource>();
+
+            //Raise event
             evtSource.CardInserted(1, "123456");
             evtSource.CardRemoved();
+
             Console.ReadLine();
         }
     }

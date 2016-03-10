@@ -1,20 +1,30 @@
 using System.Collections.Generic;
+using EventBuilder.Events;
 using EventBuilder.Events.Filters;
 
-namespace EventBuilder.Events
+namespace EventBuilder
 {
-  public class EventConsumer
+  public class EventBroker
   {
-    private static readonly EventConsumer sInstance=new EventConsumer();
+    private static readonly EventBroker sInstance=new EventBroker();
 
-    private EventConsumer()
+    private EventBroker()
     {
       
     }
 
-    public static EventConsumer Instance
+    public static EventBroker Instance
     {
       get { return sInstance; }
+    }
+
+    private readonly IEventSourceContainer mEventSourceContainer = new EventSourceContainer();
+    public IEventSourceContainer EventSourceContainer
+    {
+      get
+      {
+        return mEventSourceContainer;
+      }
     }
 
     private readonly List<IEventConsumer> mConsumers = new List<IEventConsumer>();
