@@ -1,4 +1,4 @@
-# EventBuilder
+# EventBuilder [![Build status](https://ci.appveyor.com/api/projects/status/adqc84lgix5ga2f4?svg=true)](https://ci.appveyor.com/project/yuanfei/eventbuilder)
 A library for custom event definition, generation, publishing and consuming
 
 ##Event Definition
