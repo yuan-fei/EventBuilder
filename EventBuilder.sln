@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBuilder", "EventBuilder\EventBuilder.csproj", "{37911211-6C01-4FF2-915B-D814097CCFB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBuilder.Attributes", "EventBuilder.Attributes\EventBuilder.Attributes.csproj", "{50CE17E2-A65B-4321-BA9D-37144B34736C}"
@@ -14,6 +16,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{BEFF8AA4-DF9F-4423-823E-375FAFAC1E5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEventBuilder", "TestEventBuilder\TestEventBuilder.csproj", "{A6D34FC1-D7FB-48BD-BF97-506CD209FB66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{653D590D-C8C3-48AF-A5E0-56D3D8A53561}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,10 +89,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{37911211-6C01-4FF2-915B-D814097CCFB1} = {D029FCD1-CE4D-4E81-80CB-A9664CEE2219}
 		{50CE17E2-A65B-4321-BA9D-37144B34736C} = {D029FCD1-CE4D-4E81-80CB-A9664CEE2219}
 		{108107BC-7DBC-4020-9C2B-83E3DA8702C7} = {D029FCD1-CE4D-4E81-80CB-A9664CEE2219}
 		{AE523A07-4F5D-4A79-B6C5-98C348F2CA7B} = {D029FCD1-CE4D-4E81-80CB-A9664CEE2219}
-		{37911211-6C01-4FF2-915B-D814097CCFB1} = {D029FCD1-CE4D-4E81-80CB-A9664CEE2219}
 		{A6D34FC1-D7FB-48BD-BF97-506CD209FB66} = {BEFF8AA4-DF9F-4423-823E-375FAFAC1E5D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35;packages\EntLibContrib.Logging.5.0.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal
